@@ -2,27 +2,47 @@
 <html>
     <head>
         <title>Tigo's shop</title>
-		 <meta charset="utf-8">
-		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- Support for browsers -->
+		<meta charset="utf-8">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     </head>
-	<body>
+	<body style="display: block;">
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">Tigo's shop</a>
+				<a class="navbar-brand" href="index.html">Tigo's shop</a>
 			</div>
 				<ul class="nav navbar-nav">
 				<li class="active"><a href="index.html">Home</a></li>
 				<li><a href="contact.html">Contact</a></li>
-				<li><a href="#">Staff</a></li>
-				<li><a href="#">About Us</a></li>
+				<li><a href="#">-</a></li>
+				<li><a href="#">-</a></li>
 			</ul>
 		</div>
 	</nav>
 	<div class="container">
-		<h3>Hello World!</h3>
-		<p>Find details on how to contact us over at our <a href="contact.html">contacts page</a>.</p>
+		<div class="center">
+			<h2 align="center" id="message" class="expandUp"></h2>
+			<script type="text/javascript">
+				var d = new Date();
+				var n = d.getHours();
+				if (n >= 22 || n <= 4){
+                message = "Goedenacht";
+				} else if ( n >= 5 && n <= 11 ) {
+                message = "Goedemorgen";
+				} else if ( n >= 12 && n <= 17 ) {
+                message = "Goedemiddag";
+				} else if ( n >= 18 && n <= 21 ) {
+                message = "Goedenavond";
+				}
+				document.getElementById("message").innerHTML = message;
+			</script>
+		</div>
+		<p>Heeft u vragen? Neem gerust <a href="contact.html">contact</a> met ons op.</p>
 	</div>
     </body>
 </html>
+
