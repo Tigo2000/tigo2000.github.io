@@ -15,18 +15,10 @@
 		<script src="js/bootstrap.min.js"></script>
     </head>
 	<style>
-        body {
-            background: url(./coffee-mug-smartphone-desk.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            font-family: 'Roboto', sans-serif;
-        }
         h1 {
             font-family: 'Roboto', sans-serif;
             font-size: 100px;
-            color: #AC4142;
+            color: #2042c9;
             font-weight: 300;
         }
         .center {
@@ -36,41 +28,43 @@
         }
     </style>
 	<body style="display: block;">
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">Tigo</a>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">Tigo</a>
+				</div>
+					<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="#">-</a></li>
+				</ul>
 			</div>
-				<ul class="nav navbar-nav">
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="#">-</a></li>
-			</ul>
+		</nav>
+		<div class="container">
+			<div class="top">
+				<h1 align="center" id="message" class="expandUp"></h1>
+				<script type="text/javascript">
+					var d = new Date();
+					var n = d.getHours();
+					if (n >= 22 || n <= 4){
+					message = "Goodnight";
+					} else if ( n >= 5 && n <= 11 ) {
+					message = "Good Morning";
+					} else if ( n >= 12 && n <= 17 ) {
+					message = "Good Afternoon";
+					} else if ( n >= 18 && n <= 21 ) {
+					message = "Good Evening";
+					}
+					document.getElementById("message").innerHTML = message;
+				</script>
+			</div>
+			
+			
+			<div class="well">
+				<p style="text-align:center">Government intervention in the free market always results in a lower standard of living.</p>
+			</div>
 		</div>
-	</nav>
-	<div class="container">
-		<div class="center">
-			<h2 align="center" id="message" class="expandUp"></h2>
-			<script type="text/javascript">
-				var d = new Date();
-				var n = d.getHours();
-				if (n >= 22 || n <= 4){
-                message = "Goodnight";
-				} else if ( n >= 5 && n <= 11 ) {
-                message = "Good Morning";
-				} else if ( n >= 12 && n <= 17 ) {
-                message = "Good Afternoon";
-				} else if ( n >= 18 && n <= 21 ) {
-                message = "Good Evening";
-				}
-				document.getElementById("message").innerHTML = message;
-			</script>
-		</div>
-		<div class="well">
-			<p>Don't forget to edit this to say something more original later</p>
-		</div>
-	</div>
     </body>
 </html>
 
