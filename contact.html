@@ -9,6 +9,7 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<script src="js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> <!-- Reguired for FA -->
     </head>
 	<style>
 		body {
@@ -18,33 +19,35 @@
             -o-background-size: cover;
             background-size: cover;
         }
-       	p.contact {
-            font-family: 'Roboto', sans-serif;
-            font-size: 20px;
-            color: #3B3738;
-            font-weight: 20;
-			text-align: center;
-			padding: 10px;
+       .center {
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 150px;
 		}
     </style>
 	<body style="display: block;">
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">Tigo</a>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">Tigo</a>
+				</div>
+					<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects/projects.html">Projects</a></li>
+					<li class="active"><a href="contact.html">Contact</a></li>
+					<li><a href="#">-</a></li>
+				</ul>
 			</div>
-				<ul class="nav navbar-nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li class="active"><a href="contact.html">Contact</a></li>
-				<li><a href="#">-</a></li>
-			</ul>
+		</nav>
+		<div class="center">
+			<div class="container">
+				<div class="jumbotron">
+					<a style="padding-right: 35px" href="https://twitter.com/Tigo2904"><i class="fa fa-twitter fa-4x"></i></a>	
+					<a style="padding-right: 35px" href="https://www.facebook.com/tigo.passchier"><i class="fa fa-facebook-official fa-4x"></i></a>
+					<a style="padding-right: 35px" href="mailto:tigo.github@gmail.com"><i class="fa fa-envelope fa-4x"></i></a>
+					<a style="padding-right: 35px" href="https://www.youtube.com/channel/UCHi1Bz4njdjGJE1OrqtOQAg"><i class="fa fa-youtube-play fa-4x"></i></a>
+				</div>
+			</div>
 		</div>
-	</nav>
-	<div class="container">
-		<div class="jumbotron">
-			<p class="contact"><a href="mailto:tigo.github@gmail.com" class="btn btn-primary btn-lg" role="button">Email me &raquo;</a></p>
-		</div>
-	</div>
 	</body>
 </html>
