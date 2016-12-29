@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tigo</title>
+	    <link rel="icon" href="favicon.ico">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- File needed for carousel to work -->
+		<link href="carousel.css" rel="stylesheet"> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+	</head>
+	<style>
+		.carousel-inner {
+		width: 70%;
+		margin: auto;
+	}
+	</style>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="../index.html">Tigo</a>
+				</div>
+					<ul class="nav navbar-nav">
+					<li><a href="../index.html">Home</a></li>
+					<li class="active"><a href="projects/projects.html">Projects</a></li>
+					<li><a href="../contact.html">Contact</a></li>
+					<li><a href="#">-</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<!-- First item -->
+				<div class="item active">
+					<img class="first-slide" src="../images/sennheiser.jpg" alt="First slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Lorem Ipsum.</h1>
+							<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+							<p><a class="btn btn-lg btn-primary" href="#" role="button">Click here.</a></p>
+						</div>
+					</div>
+				</div>
+				<!-- Second item -->
+				<div class="item">
+					<img class="second-slide" src="../images/alligator.jpg" alt="Second slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Class aptent.</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis.</p>
+							<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+						</div>
+					</div>
+				</div>
+				<!-- Third item -->
+				<div class="item">
+					<img class="third-slide" src="" alt="Third slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Donec venenatis.</h1>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</body>
+	</head>
+</html>
