@@ -14,22 +14,23 @@
 		body {
             background: url(./images/lamps.jpg) no-repeat center center fixed;
             background-size: cover;
-			
+			margin: 0 auto;
+			position: relative;
         }
         h2 {
             font-family: 'Roboto', sans-serif;
             font-size: 100px;
-            color: #C63D0F;
+            color: #FFFFFF;
             font-weight: 300;
-        }
-		p.quote {
-            font-family: 'Roboto', sans-serif;
-            font-size: 20px;
-            color: #3B3738;
-            font-weight: 20;
 			text-align: center;
 			padding: 10px;
 			vertical-align: middle;
+		}
+		div.center {
+			margin: 0 auto;
+			text-align: center;
+			padding: 10px;
+			margin-top: 100px;
 		}
 	</style>
 	<body>
@@ -46,29 +47,22 @@
 				</ul>
 			</div>
 		</nav>
-		<div class="container">
-			<div class="top">
-				<h2 align="center" id="message"></h2>
-				<script type="text/javascript">
-					var d = new Date();
-					var n = d.getHours();
-					if (n >= 22 || n <= 4){
-					message = "Goodnight";
-					} else if ( n >= 5 && n <= 11 ) {
-					message = "Good Morning";
-					} else if ( n >= 12 && n <= 17 ) {
-					message = "Good Afternoon";
-					} else if ( n >= 18 && n <= 21 ) {
-					message = "Good Evening";
-					}
-					document.getElementById("message").innerHTML = message;
-				</script>
-			</div>
-		</div>
-		<div class="container">
-			<div class="jumbotron">
-				<p class="quote">Government intervention in the free market always results in a lower standard of living.</p>
-			</div>
+		<div class="center">
+			<h2 align="center" id="message"></h2>
+			<script type="text/javascript">
+				var d = new Date();
+				var n = d.getHours();
+				if (n >= 22 || n <= 4){
+				message = "Goodnight";
+				} else if ( n >= 5 && n <= 11 ) {
+				message = "Good Morning";
+				} else if ( n >= 12 && n <= 17 ) {
+				message = "Good Afternoon";
+				} else if ( n >= 18 && n <= 21 ) {
+				message = "Good Evening";
+				}
+				document.getElementById("message").innerHTML = message;
+			</script>
 		</div>
 	</body>
 </html>
