@@ -13,25 +13,50 @@
 		<script src="https://static.oc.tc/assets/libraries-912fd655d5f42721ec0f4b257ad9e600219d21f56ed23b0125feaf20b7f6e28e.js"></script> <!-- Reguired for navbar -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script> <!-- Reguired for navbar -->
 		<!-- Files needed for carousel to work -->
-		<link href="./carousel.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// Activate carousel
+				$("#myCarousel").carousel();
+				
+				// Enable carousel control
+				$(".left").click(function(){
+					$("#myCarousel").carousel('prev');
+				});
+				$(".right").click(function(){
+					$("#myCarousel").carousel('next');
+				});
+				
+				// Enable carousel indicators
+				$(".slide-one").click(function(){
+					$("#myCarousel").carousel(0);
+				});
+				$(".slide-two").click(function(){
+					$("#myCarousel").carousel(1);
+				});
+				$(".slide-three").click(function(){
+					$("#myCarousel").carousel(2);
+				});
+			});
+		</script>
+		<style type="text/css">
+			h2 {
+				font-family: 'Roboto', sans-serif;
+				font-size: 50px;
+			.carousel{
+				background: #2f4357;
+				margin-top: 20px:				
+			}
+			.carousel .item img{
+				margin: 0 auto;
+			}
+			.slide {
+				margin: 20px;
+			}
+		</style>
 	</head>
-	<style>
-		h2 {
-		font-family: 'Roboto', sans-serif;
-		font-size: 50px;
-	}
-		.carousel {
-		height: 0 auto;
-	}
-		.carousel-inner {
-		width: 77%;
-		margin: 0 auto;
-	}
-	</style>
 	<body>
 		<nav class='navbar navbar-default navbar-static-top'>
 			<div class='container'>
@@ -53,55 +78,47 @@
 				</div>
 			</div>
 		</nav>
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner" role="listbox">
-				<!-- First item -->
-				<div class="item active">
-					<img class="first-slide" src="images/sennheiser.jpg" alt="First slide">
-					<div class="container">
+		<div class="slide">
+			<div id="myCarousel" class="carousel slide">
+				<!-- Carousel indicators -->
+				<ol class="carousel-indicators">
+					<li class="slide-one active"></li>
+					<li class="slide-two"></li>
+					<li class="slide-three"></li>
+				</ol>   
+				<!-- Wrapper for carousel items -->
+				<div class="carousel-inner">
+					<div class="active item">
+						<img src="images/sennheiser.jpg" alt="First Slide">
 						<div class="carousel-caption">
-							<h1>Lorem Ipsum.</h1>
-							<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
-							<p><a class="btn btn-lg btn-primary" href="#" role="button">Click here.</a></p>
+						  <h3>First slide label</h3>
+						  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="images/alligator.jpg" alt="Second Slide">
+						<div class="carousel-caption">
+						  <h3>Second slide label</h3>
+						  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="images/mountains.jpg" alt="Third Slide">
+						<div class="carousel-caption">
+						  <h3>Third slide label</h3>
+						  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
 						</div>
 					</div>
 				</div>
-				<!-- Second item -->
-				<div class="item">
-					<img class="second-slide" src="images/alligator.jpg" alt="Second slide">
-					<div class="container">
-						<div class="carousel-caption">
-							<h1>Class aptent.</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis.</p>
-							<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-						</div>
-					</div>
-				</div>
-				<!-- Third item -->
-				<div class="item">
-					<img class="third-slide" src="" alt="Third slide">
-					<div class="container">
-						<div class="carousel-caption">
-							<h1>Donec venenatis.</h1>
-							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-							<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-						</div>
-					</div>
-				</div>
+				<a class="left carousel-control">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
-			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
 		</div>
 		<div class="container">
 			<div class="container">
