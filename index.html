@@ -5,10 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta content='width=device-width, initial-scale=1' name='viewport'>
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="Profielwerkstuk vliegtuigtechniek">
-		<meta name="keywords" content="">
 		<link rel="icon" href="./assets/favicon.ico">
-		<title>Tigo Passchier</title>
+		<title>Tigo</title>
 		<!-- Bootstrap core CSS -->
 		<link href="./assets/css/bootstrap.min.css" rel="stylesheet">
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -31,13 +29,13 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html">Tigo Passchier</a>
+				<a class="navbar-brand" href="index.html">Tigo</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="index.html">Home</a>
-					<li><a href="aboutme.html">Over mij</a></li>
 					<li><a href="projects.html">Projecten</a></li>
+					<li><a href="aboutme.html">Over mij</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="contact.html">Contact</a></li>
@@ -53,23 +51,30 @@
 		</div>
     </div>
 	
-	<<div class="welcomemessage">
-		<h1 align="center" id="message"></h2>
-		<script type="text/javascript">
-			var d = new Date();
-			var n = d.getHours();
-			if (n >= 22 || n <= 4){
-			message = "Goodnight";
-			} else if ( n >= 5 && n <= 11 ) {
-			message = "Good Morning";
-			} else if ( n >= 12 && n <= 17 ) {
-			message = "Good Afternoon";
-			} else if ( n >= 18 && n <= 21 ) {
-			message = "Good Evening";
-			}
-			document.getElementById("message").innerHTML = message;
-		</script>
-	</div>
+	<div class="container">
+		<hr>
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Profielwerkstuk</h2>
+				<p>Bekijk hier het profielwerkstuk dat wij in Havo 5 hebben gemaakt.</p>
+				<p><a class="btn btn-default" href="pws.html" role="button">Klik hier &raquo;</a></p>
+			</div>
+			<div class="col-md-4">
+				<h2>Praktische opdrachten</h2>
+				<p>Bekijk hier de praktische opdrachten die wij hebben uitgevoerd om meer te weten te komen over de techniek achter vliegtuigen.</p>
+				<p><a class="btn btn-default" href="po.html" role="button">Klik hier &raquo;</a></p>
+			</div>
+			<div class="col-md-4">
+				<h2>Contact</h2>
+				<p>Heeft u vragen of wilt u met ons in contact komen? </p>
+				<p><a class="btn btn-default" href="contact.html" role="button">Klik hier &raquo;</a></p>
+			</div>
+		</div>
+		<hr>
+		<footer>
+			<p><em>&copy; 2017 Tigo Passchier</em></p>
+		</footer>
+    </div> <!-- /container -->
 		
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -81,3 +86,4 @@
     <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
 	</body>
 </html>
+
